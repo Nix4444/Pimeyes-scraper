@@ -23,5 +23,6 @@ Before you begin, ensure you have met the following requirements:
 - Add the image to be searched in your working directory.
 - Start the bot: ```python main.py```
 - Enter the name of the image, and results will be returned.
-- To use proxies, add them to ``proxies.txt`` in the format: USERNAME:PASS@IP:PORT
+- You will be limited to 10 searches per IP, so it's better to use proxy or a VPN will work too.
+- To use proxies, set ``use_proxy`` in ``main.py`` (Line 8) to ``True`` add them to ``proxies.txt`` in the format: USERNAME:PASS@IP:PORT
 - Based on type of proxy, modify the ``line 13`` and change the function to ``fetchsocks5() or fetchhttps() or fetchhttp()``
